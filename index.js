@@ -17,6 +17,10 @@ function load_data() {
 })
 }
 
+function copyto(texr){
+    navigator.clipboard.writeText(texr);
+}
+
 
 document.getElementById('form').onsubmit=(event)=>{
     event.preventDefault()
