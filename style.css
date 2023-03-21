@@ -104,4 +104,14 @@
                 grid-template-columns: 1fr 1fr;
             }
         }
-    
+        .pop-up{
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 20px;
+            padding: 10px;
+            background:#131313;
+            color: #fff;
+            text-align: center;
+        }

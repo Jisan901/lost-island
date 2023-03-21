@@ -17,7 +17,16 @@ function load_data() {
 })
 }
 
-
+function popup(pop){
+    let div=document.createElement('div')
+    
+    div.innerText=pop
+    div.classList.add('pop-up')
+    document.body.appendChild(div)
+    setTimeout(function() {
+        document.body.removeChild(div)
+    }, 2000);
+}
 
 
 document.getElementById('form').onsubmit=(event)=>{
