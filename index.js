@@ -28,6 +28,11 @@ function popup(pop){
     }, 2000);
 }
 
+ document.querySelectorAll(".cp-2").forEach(e=>{
+     e.onclick=function(){
+         popup('copied')
+     }
+ })
 
 document.getElementById('form').onsubmit=(event)=>{
     event.preventDefault()
