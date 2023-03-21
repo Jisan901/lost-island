@@ -1,4 +1,4 @@
-const url = 'https://siamvisecure.vercel.app/api/v1/comments';
+const url = 'https://siamvisecure-jisan901.vercel.app/api/v1/comments';
 function load_data() {
     fetch(url)
 .then(res=>res.json())
