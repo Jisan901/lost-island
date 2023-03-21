@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Social media <span class="color-prime">Links</span>!</h1>
+        <div class="links">
+            <div class="link">
+                <ion-icon style="color:#12A8E7;" name="logo-facebook"></ion-icon>
+                <span>Facebook</span>
+                <button title="copy link"><ion-icon name="clipboard-outline"></ion-icon></button>
+            </div>
+            <div class="link">
+                <ion-icon style="color:#3A6AD0;" name="logo-twitter"></ion-icon>
+                <span>Twitter</span>
+                <button title="copy link"><ion-icon name="clipboard-outline"></ion-icon></button>
+            </div>
+            <div class="link">
+                <ion-icon style="color:#F15D63;" name="logo-instagram"></ion-icon>
+                <span>Instagram</span>
+                <button title="copy link"><ion-icon name="clipboard-outline"></ion-icon></button>
+            </div>
+            <div class="link">
+                <ion-icon style="color:#026C8C;" name="logo-linkedin"></ion-icon>
+                <span>Linkedin</span>
+                <button title="copy link"><ion-icon name="clipboard-outline"></ion-icon></button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1><span class="color-prime">Write</span> you'r opinion</h1>
+        <br />
+        <form class="add-comments" id="form">
+            <input required type="text" name="title" id="title" placeholder="Title" />
+            <textarea required name="desc" id="desc" placeholder="Described you'r opinion"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <br />
+        <h2>All opinions</h2>
+        <div class="comments">
+            
+        </div>
+    </section>
+    <!-- ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ionic -->
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
