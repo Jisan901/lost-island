@@ -11,8 +11,23 @@ function load_data() {
         <h4 class="title">${dat.title}</h4>
                 <p class="desc">
                     ${dat.desc}
+                    <span><ion-icon class="de-1" data-delete="${dat.title}" name="trash-outline"></ion-icon></span>
+                    <span class="span"><ion-icon class="cp-3" data-clip="${dat.desc}" name="clipboard-outline"></ion-icon></span>
                 </p>
     </div>`
+    document.querySelectorAll('.de-1').forEach(function(elm){
+    elm.onclick=function(){
+        fetch('https://siamvisecure-jisan901.vercel.app/delete/'+this.getAttribute('data-delete'))
+        .then(re=>{load_data()})
+    }
+})
+    document.querySelectorAll('.cp-3').forEach(function(elm){
+    elm.onclick=function(){
+        navigator.clipboard.writeText(this.getAttribute('data-clip'))
+    }
+})
+
+
     })
 })
 }
@@ -51,4 +66,6 @@ document.getElementById('form').onsubmit=(event)=>{
     })
 }
 
+
 load_data()
+
