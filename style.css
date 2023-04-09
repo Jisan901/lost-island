@@ -96,6 +96,7 @@
             margin-top: 20px;
             text-overflow: ellipsis;
             backdrop-filter: blur(14px);
+            max-height:150px;
         }
         .comment h4{
             color: tomato;
